@@ -1,0 +1,10 @@
+body{
+    list-style: none;
+}
+form{
+    text-align: center;
+}
+li {
+    display: flex;
+    flex-direction: column;
+}

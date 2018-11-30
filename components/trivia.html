@@ -1,0 +1,12 @@
+<form>
+    <li ng-repeat="movies in $ctrl.movies">
+        <section class="question">{{movies.question}}</section>
+        <section class="answers">
+            {{movies.correct_answer}}
+        {{movies.incorrect_answers[0]}}
+        {{movies.incorrect_answers[1]}}
+        {{movies.incorrect_answers[2]}}
+        </section> 
+    </li>
+</form>
+    
