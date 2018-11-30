@@ -8,5 +8,7 @@
                 $ctrl.movies = response.data.results
             }
             TriviaService.getMovies().then(changes);
+
+            
         })
 }

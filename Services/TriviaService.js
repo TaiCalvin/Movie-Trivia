@@ -7,7 +7,7 @@
             service.getMovies = () => {
                 return $http({
                     method: "GET",
-                    url: "https://opentdb.com/api.php?amount=10&category=11&difficulty=hard&type=multiple"
+                    url: "https://opentdb.com/api.php?amount=1&category=11"
                 });
             }
         })
