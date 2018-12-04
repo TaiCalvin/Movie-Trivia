@@ -10,5 +10,10 @@
                     url: "https://opentdb.com/api.php?amount=1&category=11"
                 });
             }
+
+            service.addName = () => {
+                return 
+            }
         })
+
 }
