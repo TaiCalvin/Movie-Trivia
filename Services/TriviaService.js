@@ -13,13 +13,13 @@
             service.getMoviesMedium = () => {
                 return $http({
                     method: "GET",
-                    url: "https://opentdb.com/api.php?amount=11&difficulty=medium&type=multiple"
+                    url: "https://opentdb.com/api.php?amount=1&category=11&difficulty=medium&type=multiple"
                 });
             }
             service.getMoviesDifficult= () => {
                 return $http({
                     method: "GET",
-                    url: "https://opentdb.com/api.php?amount=11&difficulty=hard&type=multiple"
+                    url: "https://opentdb.com/api.php?amount=1&category=11&difficulty=hard&type=multiple"
                 })
             }
         })
