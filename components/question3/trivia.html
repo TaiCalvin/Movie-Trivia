@@ -1,0 +1,8 @@
+<form>
+        <li>
+            <section class="question" ng-bind-html="$ctrl.question"></section>
+            <section class="answers" ng-click="$ctrl.answerSubmit(movie)" ng-bind-html="movie" ng-repeat="movie in $ctrl.movies"></section> <br>
+        </li>
+        <button ng-click="$ctrl.updateQuestion()">Submit</button>
+    
+    </form>
