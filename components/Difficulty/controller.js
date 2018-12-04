@@ -10,12 +10,12 @@
                     switch(index) {
                         case 1:
                             $scope.Colour1 = {backgroundColor: '#'+color}; 
-                            $scope.txtcolor = {color: 'yellow'};
+                            $scope.txtcolor = {color: 'green'};
                             $scope.mydata = "Easy Difficulty";
                             break;
                         case 2:
                             $scope.Colour2 = {backgroundColor: '#'+color};
-                            $scope.txtcolor = {color: 'green'}; 
+                            $scope.txtcolor = {color: 'orange'}; 
                             $scope.mydata = "Medium Difficulty";
                             break;
                         case 3:
