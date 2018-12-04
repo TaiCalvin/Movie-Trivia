@@ -1,13 +1,13 @@
 <form>
-    <li ng-repeat="movies in $ctrl.movies">
-        <section class="question">{{movies.question}}</section>
-        <section class="answers">
-            {{movies.correct_answer}}
-        {{movies.incorrect_answers[0]}}
-        {{movies.incorrect_answers[1]}}
-        {{movies.incorrect_answers[2]}}
-        </section> 
+    <li>
+        <section class="question" ng-bind-html="$ctrl.question"></section>
+        <section class="answers" ng-click="$ctrl.answerSubmit(movie)" ng-bind-html="movie" ng-repeat="movie in $ctrl.movies"></section> <br>
     </li>
-    <button>Continue</button>
+    <button ng-click="$ctrl.updateQuestion()">Submit</button>
+
 </form>
-    
+ 
+
+<!-- use ng-class to highlight what was clicked -->
+
+

@@ -1,8 +1,15 @@
 "use strict";
 {
     angular.module('app')
-        .component('trivia', {
-            controller: 'TriviaController',
-            templateUrl: 'components/trivia.html'
+        .component('trivia1', {
+            controller: 'TriviaQuestion1Controller',
+            templateUrl: 'components/Question1/trivia.html'
         })
-}
+    
+
+        
+
+    }
+
+
+
