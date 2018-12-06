@@ -1,6 +1,7 @@
 "use strict";
 {
     angular.module('app')
+<<<<<<< HEAD
         .controller('TimerController', function($interval){
 
           const $ctrl = this;
@@ -25,3 +26,10 @@
 
          
 }
+=======
+        .component('timer', {
+            controller: 'TimerController',
+            templateUrl: 'components/timer/timer.html'
+        })
+}
+>>>>>>> d50bb1eb708573f662e0972b654caa9bbfca9276
