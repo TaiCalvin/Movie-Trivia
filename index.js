@@ -22,4 +22,5 @@
                     template: '<difficulty></difficulty>'
                 })
         });
+        
 }

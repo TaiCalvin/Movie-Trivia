@@ -4,6 +4,11 @@
         .controller('IntroController', function(TriviaService){
             const $ctrl = this;
 
-            const item = service.userInput;
+            $ctrl.userName = TriviaService.userName;
+
+            $ctrl.addName = function() {
+                window.location = "#!/difficulty"
+            }
+
         })
 }

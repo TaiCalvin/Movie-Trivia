@@ -7,6 +7,7 @@
             $ctrl.name = [];
 
             $ctrl.addName = function() {
+                TriviaService.userName = $ctrl.userName;
                 window.location = "#!/intro"
             }
             
