@@ -18,5 +18,8 @@
                 .when('/trivia3', {
                     template: '<trivia3></trivia3>'
                 })
+                .when('/difficulty', {
+                    template: '<difficulty></difficulty>'
+                })
         });
 }
