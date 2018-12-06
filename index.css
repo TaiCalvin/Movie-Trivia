@@ -1,14 +1,83 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Unlock', cursive;
+}
+/* Mobile View */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #C4BABA; 
+    }
+    li {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* Tablet View */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #C4BABA; 
+    }
+   
+  }
+  
+  /* Desktop View */
+  @media only screen and (min-width: 961px) {
+    body {
+        background-color: #C4BABA;
+      /* background: #000 url(images/background.jpg) no-repeat 0px 0px; */
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .question {
+        display: flex;
+        width: 100em;
+        margin: 0px;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .answers {
+        display: flex;
+        
+    }
+    li {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 40em;
+    }
+  }
+  
+
+
 body{
     list-style: none;
 }
 form{
     text-align: center;
 }
-li {
-    display: flex;
-    flex-direction: column;
-}
 
 .border {
     border: 2px solid black;
 }
+
+button {
+    background-color: white;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    width: 15em;
+    margin-left: 15em;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Unlock', cursive; */
