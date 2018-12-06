@@ -3,7 +3,7 @@
     angular.module('app',['ngRoute', 'ngSanitize'])
         .config(function($routeProvider){
             $routeProvider
-                .when('/welcome', {
+                .when('/', {
                     template: '<welcome></welcome>'
                 })
                 .when('/intro', {
