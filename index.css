@@ -10,6 +10,25 @@ h1 {
 }
 
 
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 2em;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     color: gold;
+     
+  }
+
 /* Mobile View */
 @media only screen and (max-width: 400px) {
     body {
