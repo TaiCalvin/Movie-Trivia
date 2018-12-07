@@ -6,15 +6,17 @@
 
             $ctrl.goEasy = function() {
                 window.location = "#!/trivia1"
-                console.log("IM working")
+               TriviaService.startTimer();
             }
 
             $ctrl.goMedium = function() {
                 window.location = "#!/trivia2"
+                TriviaService.startTimer();
             }
 
             $ctrl.goHard = function() {
                 window.location = "#!/trivia3"
+                TriviaService.startTimer();
             }
             
             
