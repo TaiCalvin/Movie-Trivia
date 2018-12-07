@@ -1,39 +1,37 @@
 "use strict";
 {
     angular.module('app')
-        .controller('DifficultyController', function($scope){
+        .controller('DifficultyController', function(TriviaService){
+            const $ctrl = this;
 
-            $scope.mydata = "please select your level.";
+            $ctrl.goEasy = function() {
+                window.location = "#!/trivia1"
+                console.log("IM working")
+            }
 
-            $scope.changeColor = function(color, index, bool) {
-                if(bool === true) {
-                    switch(index) {
-                        case 1:
-                            $scope.Colour1 = {backgroundColor: '#'+color}; 
-                            $scope.txtcolor = {color: 'green'};
-                            $scope.mydata = "Easy Difficulty";
-                            break;
-                        case 2:
-                            $scope.Colour2 = {backgroundColor: '#'+color};
-                            $scope.txtcolor = {color: 'orange'}; 
-                            $scope.mydata = "Medium Difficulty";
-                            break;
-                        case 3:
-                            $scope.Colour3 = {backgroundColor: '#'+color};
-                            $scope.txtcolor = {color: 'red'}; 
-                            $scope.mydata = "Hard Difficulty";
-                            break;                                                        
-                    }
-                } else if (bool === false) {
-                    console.log('leave');
-                    $scope.Colour1 = {backgroundColor: '#ffffff'};
-                    $scope.Colour2 = {backgroundColor: '#ffffff'};
-                    $scope.Colour3 = {backgroundColor: '#ffffff'};
-                };
+            $ctrl.goMedium = function() {
+                window.location = "#!/trivia2"
             }
-            $scope.pagelink = function() {
-                $scope.myVar = true;
+
+            $ctrl.goHard = function() {
+                window.location = "#!/trivia3"
             }
+            
             
         })
 }
+
+// "use strict";
+// {
+//     angular.module('app')
+//         .controller('IntroController', function(TriviaService){
+//             const $ctrl = this;
+
+//             $ctrl.userName = TriviaService.userName;
+
+//             $ctrl.addName = function() {
+//                 window.location = "#!/difficulty"
+//             }
+
+//         })
+// }

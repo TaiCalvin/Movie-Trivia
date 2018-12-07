@@ -8,6 +8,30 @@ h1 {
 .border {
     border: 2px solid black;
 }
+<<<<<<< HEAD
+=======
+
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 2em;
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     color: gold;
+     
+  }
+
+>>>>>>> e966532a287ecdd5e60a06fec5c7f70e9d8af412
 /* Mobile View */
 @media only screen and (max-width: 400px) {
     

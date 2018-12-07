@@ -1,36 +1,18 @@
-<div style="width: 100%;margin-top: 100px">
+
+    <div class="rating">
+
     
-    <textarea ng-style="txtcolor" ng-model="mydata" style="border: none;resize: none;width: 100%;text-align: center;font-size: 50px">
-    </textarea>
-    
-    <div style="display: flex;flex-direction: row;text-align: center;justify-content: center;">
-        <div  ng-style="Colour1" ng-click="pagelink()" ng-mouseenter="changeColor('1f1f1f',1,true)" ng-mouseleave="changeColor('ff0000',1,false)">
-            <a href="#!/trivia1">
-                <img src = "./assets/Star_1.png">
-            </a>
-        </div>
+                <p>Easiest</p>
+                <span ng-click="$ctrl.goHard()">☆</span>
         
-        <div  ng-style="Colour1" ng-click="pagelink()" ng-mouseenter="changeColor('1f1f1f',1,true)" ng-mouseleave="changeColor('ff0000',1,false)">
-            <a href="#!/trivia1">
-                <img src = "./assets/Star_1.png">
-            </a>
-        </div>
-        <div  ng-style="Colour2" ng-mouseenter="changeColor('00ff00',2,true)" ng-mouseleave="changeColor('ff0000',2,false)" style="margin: 0px 40px">
-            <a href="#!/trivia2">
-                <img src = "./assets/Star_1.png">
-            </a>
-        </div>
-        <div  ng-style="Colour3" ng-mouseenter="changeColor('0000ff',3,true)" ng-mouseleave="changeColor('ff0000',3,false)">
-            <a href="#!/trivia3">
-                <img src = "./assets/Star_1.png">
-            </a>
-        </div>
-        <div  ng-style="Colour3" ng-mouseenter="changeColor('0000ff',3,true)" ng-mouseleave="changeColor('ff0000',3,false)">
-            <a href="#!/trivia3">
-                <img src = "./assets/Star_1.png">
-            </a>
-        </div>
-    </div>
-    <ng-outlet></ng-outlet>
-    <!-- <trivia ng-show="myVar"></trivia> -->
+                <span ng-click="$ctrl.goMedium()">☆</span>
+        
+                <span ng-click="$ctrl.goMedium()">☆</span>
+   
+                <span ng-click="$ctrl.goEasy()">☆</span>
+       
+                <span ng-click="$ctrl.goEasy()">☆</span>
+                <p>Most Difficult</p>
+      
+
 </div>
