@@ -4,6 +4,8 @@
         .service("TriviaService", function($http){
             const service = this;
 
+            service.score = 0;
+            
             service.getMoviesEasy = ($sanitize) => {
                 return $http({
                     method: "GET",

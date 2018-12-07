@@ -25,8 +25,8 @@
             $ctrl.updateQuestion = function() {
                 console.log($ctrl.correctAnswer, $ctrl.userAnswer)
                 if ($ctrl.correctAnswer === $ctrl.userAnswer) {
-                    counter += 5;
-                    console.log(counter);
+                    TriviaService.score += 5
+                    console.log(TriviaService.score);
                     TriviaService.getMoviesEasy().then(changes);
                 }
                 else {

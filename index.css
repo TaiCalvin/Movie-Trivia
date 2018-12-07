@@ -8,13 +8,9 @@ h1 {
 .border {
     border: 2px solid black;
 }
-
-
 /* Mobile View */
 @media only screen and (max-width: 400px) {
-    body {
-      background-color: #C4BABA; 
-    }
+    
 
     .questionContainer {
         display: flex;
@@ -58,7 +54,7 @@ h1 {
   /* Tablet View */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
     body {
-        background-color: #C4BABA;
+        
         display: flex;
     }
     .questionContainer {
@@ -103,7 +99,7 @@ h1 {
   /* Desktop View */
   @media only screen and (min-width: 961px) {
     body {
-        background-color: #C4BABA;
+        
         display: flex;
     }
     
@@ -146,7 +142,7 @@ h1 {
         align-content: center;
           
     }
-
+    
    
 
   }

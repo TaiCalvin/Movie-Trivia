@@ -21,6 +21,12 @@
                 .when('/difficulty', {
                     template: '<difficulty></difficulty>'
                 })
+                .when('/score', {
+                    template: '<score></score>'
+                })
+                .when('/timer', {
+                    template: '<timer></timer>'
+                })
         });
         
 }
