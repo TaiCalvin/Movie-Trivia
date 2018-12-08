@@ -2,11 +2,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-    font-family: 'Unlock', cursive;
-}
 .border {
-    border: 2px solid black;
+    border: 2px solid white;
+    
+}
+
+#count {
+    color: white;
+    align-items: right;
+    position: absolute;
+    right: 0;
 }
 
 
@@ -31,8 +36,145 @@ h1 {
 
 /* Mobile View */
 @media only screen and (max-width: 400px) {
+    /*Mobile View- Welcome Page */
+    html, body{
+        font-weight: 800;
+      }
+      
+      body{
+        background: #030321;
+      }
+      
+      svg {
+          display: block;
+          font: 10em 'Montserrat';
+          margin: 0 auto;
+      }
+      
+      .text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+      }
+      
+      .text-copy:nth-child(1){
+          stroke: #4D163D;
+          animation-delay: -1;
+      }
+      
+      .text-copy:nth-child(2){
+          stroke: #840037;
+          animation-delay: -2s;
+      }
+      
+      .text-copy:nth-child(3){
+          stroke: #BD0034;
+          animation-delay: -3s;
+      }
+      
+      .text-copy:nth-child(4){
+          stroke: #BD0034;
+          animation-delay: -4s;
+      }
+      
+      .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+      }
+      
+      @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+      }
     
+    
+      .welcomeEnter {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
 
+      .welcomeForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .welcomeName {
+       width: 12em;
+       font-size: 0.75em;
+       padding: 0.5em;
+       text-align: center;
+      }
+
+      .welcomeButton {
+        width: 8em;
+        margin-top: 2em;
+        font-size: .5em;
+        padding: 0.5em;
+        font-family: 'Unlock', cursive;
+      }
+    /*Mobile View- Intro Page */
+    .introContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introHello {
+      color: white;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .introDescription {
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+  
+    /*Mobile View- Difficulty Page */
+  .rating {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .pickContainer {
+      display: flex;
+      justify-content: center;
+      
+  }
+      .pick {
+          color: white;
+          font-size: 1em;
+      }
+    .star {
+      color: white;
+      font-size: 1em;
+
+  }
+
+  .easiest {
+      color: white;
+      font-size: 0.5em;
+    
+  }
+
+  .mostDifficult {
+      color: white;
+      font-size: 0.5em;
+      
+  }
+
+
+
+    /*Mobile View- Question Page */  
     .questionContainer {
         display: flex;
         justify-content: center;
@@ -52,12 +194,24 @@ h1 {
 
     .answers {
         display: flex;
-        margin: 3em;
+        margin: 1em;
         padding: 1em;
         text-align: center;
         justify-content: center;
         align-content: center;
-        
+        color: white;
+    }
+
+    .answers:hover {
+        cursor: pointer;
+        opacity: 0.45;
+    }
+
+    .question {
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        margin-top: 2em;
     }
 
     button {
@@ -69,89 +223,437 @@ h1 {
         align-content: center;
     }
     
+    .pointContainer {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+   /* Mobile View- Score Review Page */
+     .pointScored {
+         color: white;
+         font-family: 'Unlock', cursive;
+         font-size: 2em;
+         margin: 1em;
+         text-align: center;
+     }
+   
+     .homeButton {
+         margin: 1em;
+
+     }
     
   }
   
   /* Tablet View */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-        
-        display: flex;
-    }
-    .questionContainer {
+    /*Tablet View- Welcome Page */
+    html, body{
+        font-weight: 800;
+      }
+      
+      body{
+        background: #030321;
+      }
+      
+      svg {
+          display: block;
+          font: 10em 'Montserrat';
+          margin: 0 auto;
+      }
+      
+      .text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+      }
+      
+      .text-copy:nth-child(1){
+          stroke: #4D163D;
+          animation-delay: -1;
+      }
+      
+      .text-copy:nth-child(2){
+          stroke: #840037;
+          animation-delay: -2s;
+      }
+      
+      .text-copy:nth-child(3){
+          stroke: #BD0034;
+          animation-delay: -3s;
+      }
+      
+      .text-copy:nth-child(4){
+          stroke: #BD0034;
+          animation-delay: -4s;
+      }
+      
+      .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+      }
+      
+      @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+      }
+    
+      .welcomeEnter {
         display: flex;
         justify-content: center;
-        align-content: center;
+        text-align: center;
+      }
+
+      .welcomeForm {
+        display: flex;
         flex-direction: column;
-        margin: 0;
-        padding: 0;
-    }
+        justify-content: center;
+        align-items: center;
+      }
 
-    .answers {
-        padding: 1em;
-        text-align: center;
-    }
+      .welcomeName {
+       width: 30em;
+       font-size: 1.5em;
+       padding: 0.5em;
+       
+      }
 
-    .qAndA {
-        margin: 0;
-        padding: 0;
-    }
-    .question {
-        text-align: center;
-    }
-    .questionForm {
+      .welcomeButton {
+        width: 8em;
+        margin-top: 2em;
+        font-size: 1.5em;
+        padding: 0.5em;
+        font-family: 'Unlock', cursive;
+      }
+
+     /*Tablet View- Intro Page */
+     .introContainer {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;   
-       
-    }
-    button {
-        background-color: white;
-        border-radius: 12px;
-        flex-wrap: wrap;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        align-content: center;
     }
+
+    .introHello {
+      color: white;
+      font-size: 5em;
+      text-align: center;
+    }
+
+    .introDescription {
+        color: white;
+        font-size: 3em;
+        text-align: center;
+    }
+  
+    /*Tablet View- Difficulty Page */
+    .rating {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+    .pickContainer {
+      display: flex;
+      justify-content: center;
+  }
+    .pick {
+        color: white;
+        font-size: 3em;
+        text-align: center;
+      }
+    .star {
+      color: white;
+      font-size: 2em;
+
+  }
+
+  .easiest {
+      color: white;
+      font-size: 1em;
+      /* padding: 2em; */
+  }
+
+  .mostDifficult {
+      color: white;
+      font-size: 1em;
+      /* padding: 2em; */
+  }
+
+
+  /*Tablet View- Question Page */
+  .questionContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5em;
+  }
+
+  .answers {
+      padding: 1em;
+      text-align: center;
+      color: white;
+      font-size: 1em;
+  }
+
+  .answers:hover {
+    cursor: pointer;
+    opacity: 0.45;
+}
+
+  .qAndA {
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      margin: 0;
+  }
+  .question {
+      text-align: center;
+      color: white;
+      font-size: 2em;
+  }
+  .questionForm {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; 
+      justify-content: center;
+      align-items: center;
+  }
+
+  .answerSpan {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+  }
+
+  button {
+      background-color: white;
+      border-radius: 12px;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      font-size: 2em;
+      width: 10em;
+      margin: 2em;
+        
+  }
+  
+ /*Tablet View- Final Score Page */
+
+ .pointContainer {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+  .pointScored {
+      color: white;
+      font-family: 'Unlock', cursive;
+      font-size: 5em;
+      margin: 1em;
+      text-align: center;
+  }
+
+  .homeButton {
+      margin: 0;
+  }
 
    
   }
   
   /* Desktop View */
   @media only screen and (min-width: 961px) {
-    body {
-        
-        display: flex;
-    }
+
+    /* Desktop View- Welcome Page */
+    html, body{
+        font-weight: 800;
+      }
+      
+      body{
+        background: #030321;
+      }
+      
+      svg {
+          display: block;
+          font: 10em 'Montserrat';
+          margin: 0 auto;
+      }
+      
+      .text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+      }
+      
+      .text-copy:nth-child(1){
+          stroke: #4D163D;
+          animation-delay: -1;
+      }
+      
+      .text-copy:nth-child(2){
+          stroke: #840037;
+          animation-delay: -2s;
+      }
+      
+      .text-copy:nth-child(3){
+          stroke: #BD0034;
+          animation-delay: -3s;
+      }
+      
+      .text-copy:nth-child(4){
+          stroke: #BD0034;
+          animation-delay: -4s;
+      }
+      
+      .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+      }
+      
+      @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+      }
     
+    
+      .welcomeEnter {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .welcomeForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .welcomeName {
+       width: 30em;
+       font-size: 1.5em;
+       padding: 0.5em;
+       
+      }
+
+      .welcomeButton {
+        width: 8em;
+        margin-top: 2em;
+        font-size: 1.5em;
+        padding: 0.5em;
+        font-family: 'Unlock', cursive;
+      }
+
+      /* Desktop View- Intro Page */
+      .introContainer {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .introHello {
+        color: white;
+        font-size: 5em;
+        text-align: center;
+      }
+
+      .introDescription {
+          color: white;
+          font-size: 3em;
+          text-align: center;
+      }
+    
+      /* Desktop View- Difficulty Page */
+    .rating {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5em;
+    }
+    .pickContainer {
+        display: flex;
+        justify-content: center;
+    }
+        .pick {
+            color: white;
+            font-size: 3em;
+        }
+      .star {
+        color: white;
+        font-size: 5em;
+
+    }
+
+    .easiest {
+        color: white;
+        font-size: 1em;
+        padding: 2em;
+    }
+
+    .mostDifficult {
+        color: white;
+        font-size: 1em;
+        padding: 2em;
+        text-align: center;
+    }
+
+
+    /*Desktop View- Question Page */
     .questionContainer {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: center;
+        padding-top: 5em;
     }
 
     .answers {
         padding: 1em;
         text-align: center;
+        color: white;
+        font-size: 2em;
+        
+    }
+
+    .answers:hover {
+        cursor: pointer;
+        opacity: 0.45;
     }
 
     .qAndA {
         margin: 0;
         padding: 0;
         flex-direction: row;
-        
+        margin: 0;
     }
     .question {
         text-align: center;
+        color: white;
+        font-size: 3em;
     }
     .questionForm {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column; 
+        justify-content: center;
+        align-items: center;
     }
 
     .answerSpan {
         display: flex;
+        margin: 0;
+        justify-content: center;
     }
 
     button {
@@ -161,10 +663,30 @@ h1 {
         text-align: center;
         justify-content: center;
         align-content: center;
+        font-size: 2em;
+        width: 10em;
+        margin: 2em;
           
     }
     
-   
+   /*Desktop View-  Final Score Page */
+
+   .pointContainer {
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       flex-direction: column;
+   }
+    .pointScored {
+        color: white;
+        font-family: 'Unlock', cursive;
+        font-size: 5em;
+        margin: 1em;
+    }
+
+    .homeButton {
+        margin: 0;
+    }
 
   }
 
