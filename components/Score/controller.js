@@ -11,7 +11,7 @@
                 window.location = "#!/"
             }
             $ctrl.difficult = function() {
-                window.location = "#!/difficulty"
+                window.location = " #!/difficulty"
             }
 })
 }

@@ -616,6 +616,8 @@
         justify-content: center;
         align-items: center;
         padding-top: 5em;
+        /* background-image: url("assets/toy-story.jpg");
+        background-size: auto; */
     }
 
     .answers {
