@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .border {
@@ -9,11 +10,12 @@
 
 #count {
     color: white;
-    align-items: right;
     position: absolute;
-    right: 0;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+    border: 2px solid white;
 }
-
 
 .rating {
     unicode-bidi: bidi-override;
@@ -31,7 +33,6 @@
      content: "\2605";
      position: absolute;
      color: gold;
-     
   }
 
 /* Mobile View */
@@ -89,7 +90,6 @@
         100% {stroke-dashoffset: -35%;}
       }
     
-    
       .welcomeEnter {
         display: flex;
         justify-content: center;
@@ -108,15 +108,56 @@
        font-size: 0.75em;
        padding: 0.5em;
        text-align: center;
+       border-radius: 5px;
+       background: #030321;
+       border: 1px solid #840037;
+       opacity: 0.7;
+      }
+
+      .welcomeName::placeholder {
+          text-align: center;
       }
 
       .welcomeButton {
-        width: 8em;
-        margin-top: 2em;
-        font-size: .5em;
-        padding: 0.5em;
+        width: 20em;
+        height: 2em;
+        margin-top: 1em;
+        font-size: 1em;
+        padding: 0.2em;
         font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        width:120px;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5);
+}
+
       }
+
+      #top, #bottom, #left, #right {
+        background: #840037;
+        position: fixed;
+        }
+        #left, #right {
+            top: 0; bottom: 0;
+            width: 15px;
+            }
+            #left { left: 0; }
+            #right { right: 0; }
+            
+        #top, #bottom {
+            left: 0; right: 0;
+            height: 15px;
+            }
+            #top { top: 0; }
+            #bottom { bottom: 0; }
+
+
     /*Mobile View- Intro Page */
     .introContainer {
         display: flex;
@@ -124,6 +165,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 2px;
     }
 
     .introHello {
@@ -136,7 +178,29 @@
         color: white;
         font-size: 1em;
         text-align: center;
+        margin: 0px 20px 10px 20px;
+        border-width:5px;  
+        border-style:double;
+        border-color: #840037;
     }
+
+    .introButton {
+        width: 10em;
+        height: 2em;
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 0.2em;
+        font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5);
+      }
   
     /*Mobile View- Difficulty Page */
   .rating {
@@ -155,7 +219,7 @@
           font-size: 1em;
       }
     .star {
-      color: white;
+      color: #840037;
       font-size: 1em;
 
   }
@@ -171,8 +235,6 @@
       font-size: 0.5em;
       
   }
-
-
 
     /*Mobile View- Question Page */  
     .questionContainer {
@@ -194,12 +256,15 @@
 
     .answers {
         display: flex;
-        margin: 1em;
         padding: 1em;
+        margin: 2em;
         text-align: center;
         justify-content: center;
         align-content: center;
-        color: white;
+        color:#840037;
+        font-size: 1em;
+        border: 2px solid #FDB731;
+        border-radius: 10px;
     }
 
     .answers:hover {
@@ -207,32 +272,48 @@
         opacity: 0.45;
     }
 
+    .qAndA {
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        margin: 15px;
+    }
+
     .question {
         text-align: center;
-        color: white;
+        color: #840037;
         font-size: 1em;
-        margin-top: 2em;
+        margin-top: 6em;
     }
 
     button {
-        background-color: white;
-        border-radius: 12px;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    .pointContainer {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
+        margin: 0 auto; width: 50%;
+        width: 10em;
+        height: 2em;
+        margin-top: 0.2em;
+        font-size: 1.5em;
+        padding: 0.2em;
+        font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5); 
     }
 
    /* Mobile View- Score Review Page */
-     .pointScored {
+   .pointContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+   }  
+   .pointScored {
          color: white;
          font-family: 'Unlock', cursive;
          font-size: 2em;
@@ -242,10 +323,7 @@
    
      .homeButton {
          margin: 1em;
-
      }
-    
-  }
   
   /* Tablet View */
   @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -316,19 +394,55 @@
       }
 
       .welcomeName {
-       width: 30em;
-       font-size: 1.5em;
-       padding: 0.5em;
-       
-      }
-
-      .welcomeButton {
-        width: 8em;
-        margin-top: 2em;
+        width: 30em;
         font-size: 1.5em;
         padding: 0.5em;
-        font-family: 'Unlock', cursive;
-      }
+        text-align: center;
+        border-radius: 5px;
+        background: #030321;
+        border: 1px solid #840037;
+        opacity: 0.7;
+       }
+
+       .welcomeName::placeholder {
+        text-align: center;
+        }
+ 
+       .welcomeButton {
+         width: 10em;
+         height: 2em;
+         margin-top: 1em;
+         font-size: 1.5em;
+         padding: 0.2em;
+         font-family: 'Unlock', cursive;
+         appearance: none;
+         opacity: .99;
+         background: #840037;
+         box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+         border: 1px solid #840037;
+         border-radius: 4px;
+         color: #eee;
+         cursor: pointer;
+         text-shadow:0px -1px 0px rgba(0,0,0,.5);
+       }
+ 
+       #top, #bottom, #left, #right {
+         background: #840037;
+         position: fixed;
+         }
+         #left, #right {
+             top: 0; bottom: 0;
+             width: 15px;
+             }
+             #left { left: 0; }
+             #right { right: 0; }
+             
+         #top, #bottom {
+             left: 0; right: 0;
+             height: 15px;
+             }
+             #top { top: 0; }
+             #bottom { bottom: 0; }
 
      /*Tablet View- Intro Page */
      .introContainer {
@@ -337,6 +451,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 2px;
     }
 
     .introHello {
@@ -349,7 +464,29 @@
         color: white;
         font-size: 3em;
         text-align: center;
+        margin: 0px 50px 0px 50px;
+        border-width:5px;  
+        border-style:double;
+        border-color: #840037;
     }
+
+    .introButton {
+        width: 10em;
+        height: 2em;
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 0.2em;
+        font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5);
+      }
   
     /*Tablet View- Difficulty Page */
     .rating {
@@ -368,7 +505,7 @@
         text-align: center;
       }
     .star {
-      color: white;
+      color: #840037;
       font-size: 2em;
 
   }
@@ -387,62 +524,72 @@
 
 
   /*Tablet View- Question Page */
-  .questionContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 5em;
-  }
+.questionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+}
 
-  .answers {
-      padding: 1em;
-      text-align: center;
-      color: white;
-      font-size: 1em;
-  }
+.answers {
+    padding: 1em;
+    margin: 0px 4px 0px 4px;
+    text-align: center;
+    color:#840037;
+    font-size: 2em;
+    border: 2px solid #FDB731;
+    border-radius: 10px;
+}
 
-  .answers:hover {
+.answers:hover {
     cursor: pointer;
     opacity: 0.45;
 }
 
-  .qAndA {
-      margin: 0;
-      padding: 0;
-      flex-direction: row;
-      margin: 0;
-  }
-  .question {
-      text-align: center;
-      color: white;
-      font-size: 2em;
-  }
-  .questionForm {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column; 
-      justify-content: center;
-      align-items: center;
-  }
+.qAndA {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    margin: 15px;
+}
+.question {
+    text-align: center;
+    margin: 40px 10px 40px 10px;
+    color: #840037;
+    font-size: 3em;
+}
+.questionForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
 
-  .answerSpan {
-      display: flex;
-      margin: 0;
-      justify-content: center;
-  }
+.answerSpan {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
 
-  button {
-      background-color: white;
-      border-radius: 12px;
-      flex-wrap: wrap;
-      text-align: center;
-      justify-content: center;
-      align-content: center;
-      font-size: 2em;
-      width: 10em;
-      margin: 2em;
-        
-  }
+button {
+    width: 10em;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    padding: 0.2em;
+    font-family: 'Unlock', cursive;
+    appearance: none;
+    opacity: .99;
+    background: #840037;
+    box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+    border: 1px solid #840037;
+    border-radius: 4px;
+    color: #eee;
+    cursor: pointer;
+    text-shadow:0px -1px 0px rgba(0,0,0,.5);    
+}
+
   
  /*Tablet View- Final Score Page */
 
@@ -525,7 +672,6 @@
         100% {stroke-dashoffset: -35%;}
       }
     
-    
       .welcomeEnter {
         display: flex;
         justify-content: center;
@@ -543,16 +689,52 @@
        width: 30em;
        font-size: 1.5em;
        padding: 0.5em;
-       
+       text-align: center;
+       border-radius: 5px;
+       background: #030321;
+       border: 1px solid #840037;
+       opacity: 0.7;
+      }
+      
+      .welcomeName::placeholder {
+        text-align: center;
+      }
+        
+      .welcomeButton {
+        width: 10em;
+        height: 2em;
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 0.2em;
+        font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5);
       }
 
-      .welcomeButton {
-        width: 8em;
-        margin-top: 2em;
-        font-size: 1.5em;
-        padding: 0.5em;
-        font-family: 'Unlock', cursive;
-      }
+      #top, #bottom, #left, #right {
+        background: #840037;
+        position: fixed;
+        }
+        #left, #right {
+            top: 0; bottom: 0;
+            width: 15px;
+            }
+            #left { left: 0; }
+            #right { right: 0; }
+            
+        #top, #bottom {
+            left: 0; right: 0;
+            height: 15px;
+            }
+            #top { top: 0; }
+            #bottom { bottom: 0; }
 
       /* Desktop View- Intro Page */
       .introContainer {
@@ -561,6 +743,7 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          padding: 4px;
       }
 
       .introHello {
@@ -573,6 +756,28 @@
           color: white;
           font-size: 3em;
           text-align: center;
+          margin: 0px 50px 0px 50px;
+          border-width:10px;  
+          border-style:double;
+          border-color: #840037;
+      }
+
+      .introButton {
+        width: 10em;
+        height: 2em;
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 0.2em;
+        font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5);
       }
     
       /* Desktop View- Difficulty Page */
@@ -591,9 +796,8 @@
             font-size: 3em;
         }
       .star {
-        color: white;
+        color: #840037;
         font-size: 5em;
-
     }
 
     .easiest {
@@ -620,10 +824,12 @@
 
     .answers {
         padding: 1em;
+        margin: 0px 4px 0px 4px;
         text-align: center;
-        color: white;
+        color:#840037;
         font-size: 2em;
-        
+        border: 2px solid #FDB731;
+        border-radius: 10px;
     }
 
     .answers:hover {
@@ -635,11 +841,12 @@
         margin: 0;
         padding: 0;
         flex-direction: row;
-        margin: 0;
+        margin: 15px;
     }
     .question {
         text-align: center;
-        color: white;
+        margin: 40px 10px 40px 10px;
+        color: #840037;
         font-size: 3em;
     }
     .questionForm {
@@ -657,16 +864,21 @@
     }
 
     button {
-        background-color: white;
-        border-radius: 12px;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        font-size: 2em;
         width: 10em;
-        margin: 2em;
-          
+        height: 2em;
+        margin-top: 1em;
+        font-size: 1.5em;
+        padding: 0.2em;
+        font-family: 'Unlock', cursive;
+        appearance: none;
+        opacity: .99;
+        background: #840037;
+        box-shadow: inset 0 2px 3px rgba(255,255,255, .35), 0px 1px 6px #FDB731;
+        border: 1px solid #840037;
+        border-radius: 4px;
+        color: #eee;
+        cursor: pointer;
+        text-shadow:0px -1px 0px rgba(0,0,0,.5);    
     }
     
    /*Desktop View-  Final Score Page */
