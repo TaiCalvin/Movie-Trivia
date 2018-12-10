@@ -3,14 +3,14 @@
     angular.module('app')
         .service("TriviaService", function($http, $interval){
             const service = this;
-            service.counter = 30;
+            service.counter = 45;
             service.score = 0;
             service.startTimer = () => {
                 const id = $interval(function() {
                   service.counter--;
                   if (service.counter === 0) {
                       $interval.cancel(id);
-                      service.counter = 30;
+                      service.counter = 45;
                       window.location = "#!/score"
                   }
                 }, 1000);
