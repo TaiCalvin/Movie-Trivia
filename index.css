@@ -7,7 +7,11 @@
     display: flex;
 }
 .border {
+<<<<<<< HEAD
     background-color: #FDB731;
+=======
+    background-color: #fdb731;
+>>>>>>> 043180b80080676e22c0779c4c9c9df60a8ba487
 }
 
 #count {
@@ -521,7 +525,7 @@
   .mostDifficult {
       color: white;
       font-size: 1em;
-      /* padding: 2em; */
+      /*padding: 2em; */
   }
 
 
