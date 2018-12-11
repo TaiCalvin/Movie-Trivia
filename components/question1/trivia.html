@@ -1,12 +1,13 @@
 <timer></timer>
 <div class= "questionContainer">
-<form class = "questionForm">
+<form class= "questionForm">
 
     <div class ="qAndA">
         <section class="question" ng-bind-html="$ctrl.question"></section>
         
         <span class = "answerSpan">
-        <section class="answers" ng-click="$ctrl.answerSubmit(movie)" ng-bind-html="movie" ng-repeat="movie in $ctrl.movies" ng-class="{border: $ctrl.userAnswer === movie}"></section> <br>
+        <section class="answers" ng-click="$ctrl.answerSubmit(movie)" ng-bind-html="movie" ng-repeat="movie in $ctrl.movies" 
+        ng-class="{border: $ctrl.userAnswer === movie}"></section> <br>
          </span>
     </div>
 
