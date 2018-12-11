@@ -1,19 +1,23 @@
 <timer></timer>
 
 <div class= "questionContainer">
-<form class = "questionForm">
+<form class= "questionForm">
 
     <div class ="qAndA">
         <section class="question" ng-bind-html="$ctrl.question"></section>
         
         <span class = "answerSpan">
-            <section class="answers" ng-click="$ctrl.answerSubmit(movie)" ng-bind-html="movie" ng-repeat="movie in $ctrl.movies" ng-class="{border: $ctrl.userAnswer === movie}"></section> <br>
-            
-        </span>
+        <section class="answers" ng-click="$ctrl.answerSubmit(movie)" ng-bind-html="movie" ng-repeat="movie in $ctrl.movies" 
+        ng-class="{border: $ctrl.userAnswer === movie}"></section> <br>
+         </span>
     </div>
 
     <button ng-click="$ctrl.updateQuestion()">Submit</button>
 
+    <div class="result">
+        <img  src="{{answers}}" ng-repeat="answers in $ctrl.correct track by $index">
+    </div>
+    
 </form>
  
 </div>

@@ -22,15 +22,21 @@
             }
             
             let counter = 0;
+            $ctrl.correct = [];
+            $ctrl.right = "assets/correct.svg"
+            $ctrl.wrong = "assets/incorrect.svg"
             $ctrl.updateQuestion = function() {
                 console.log($ctrl.correctAnswer, $ctrl.userAnswer)
                 if ($ctrl.correctAnswer === $ctrl.userAnswer) {
                     TriviaService.score += 5
+                    $ctrl.correct.push($ctrl.right);
+                    console.log('correct!');
                     console.log(TriviaService.score);
                     TriviaService.getMoviesEasy().then(changes);
                 }
                 else {
                     TriviaService.getMoviesEasy().then(changes);
+                    $ctrl.correct.push($ctrl.wrong);
                 }
             }
 
