@@ -4,8 +4,7 @@
 }
 
 .border {
-    border: 2px solid white;
-    
+    background-color: #fdb731;
 }
 
 #count {
@@ -519,7 +518,7 @@
   .mostDifficult {
       color: white;
       font-size: 1em;
-      /* padding: 2em; */
+      /*padding: 2em; */
   }
 
 

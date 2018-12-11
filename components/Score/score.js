@@ -5,4 +5,5 @@
             controller: 'ScoreController',
             templateUrl: 'components/Score/score.html'
         })
+
 }
