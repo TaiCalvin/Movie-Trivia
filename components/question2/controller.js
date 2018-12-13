@@ -22,15 +22,21 @@
             }
             
             let counter = 0;
+            $ctrl.correct = [];
+            $ctrl.right = "assets/correct.svg"
+            $ctrl.wrong = "assets/incorrect.svg"
             $ctrl.updateQuestion = function() {
                 console.log($ctrl.correctAnswer, $ctrl.userAnswer)
                 if ($ctrl.correctAnswer === $ctrl.userAnswer) {
-                    counter += 5;
-                    console.log(counter);
-                    TriviaService.getMoviesMedium().then(changes);
+                    TriviaService.score += 5
+                    $ctrl.correct.push($ctrl.right);
+                    console.log('correct!');
+                    console.log(TriviaService.score);
+                    TriviaService.getMoviesEasy().then(changes);
                 }
                 else {
-                    TriviaService.getMoviesMedium().then(changes);
+                    TriviaService.getMoviesEasy().then(changes);
+                    $ctrl.correct.push($ctrl.wrong);
                 }
             }
 
