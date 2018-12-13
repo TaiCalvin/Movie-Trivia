@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app')
-        .controller('DifficultyController', function(TriviaService){
+        .controller('DifficultyController', ['TriviaService', function(TriviaService){
             const $ctrl = this;
 
             $ctrl.goEasy = function() {
@@ -20,6 +20,6 @@
             }
             
             
-        })
+        }])
 }
 

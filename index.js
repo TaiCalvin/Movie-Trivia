@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app',['ngRoute', 'ngSanitize'])
-        .config(function($routeProvider){
+        .config(['$routeProvider', function($routeProvider){
             $routeProvider
                 .when('/', {
                     template: '<welcome></welcome>'
@@ -27,6 +27,6 @@
                 .when('/timer', {
                     template: '<timer></timer>'
                 })
-        });
+        }]);
         
 }
