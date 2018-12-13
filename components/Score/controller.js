@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app')
-        .controller('ScoreController', function(TriviaService){
+        .controller('ScoreController', ['TriviaService', function(TriviaService){
             const $ctrl = this;
 
             $ctrl.name = TriviaService.userName;
@@ -13,5 +13,5 @@
             $ctrl.difficult = function() {
                 window.location = " #!/difficulty"
             }
-})
+}])
 }

@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app')
-        .controller('WelcomeController', function(TriviaService){
+        .controller('WelcomeController', ['TriviaService', function(TriviaService){
             const $ctrl = this;
 
             $ctrl.name = [];
@@ -11,5 +11,5 @@
                 window.location = "#!/intro"
             }
             
-        })
+        }])
 }

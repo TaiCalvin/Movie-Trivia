@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app')
-        .controller('TriviaQuestion3Controller', function(TriviaService, $timeout){
+        .controller('TriviaQuestion3Controller', ['TriviaService', '$timeout', function(TriviaService, $timeout){
             const $ctrl = this;
 
             function changes(response){
@@ -40,5 +40,5 @@
                 }
             }
 
-        })   
+        }])   
 }

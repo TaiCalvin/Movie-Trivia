@@ -1,7 +1,7 @@
 "use strict";
 {
     angular.module('app')
-        .service("TriviaService", function($http, $interval){
+        .service("TriviaService", ['$http', '$timeout', function($http, $interval){
             const service = this;
             service.counter = 45;
             service.score = 0;
@@ -34,6 +34,6 @@
                 })
             }
             
-        })
+        }])
 
 }

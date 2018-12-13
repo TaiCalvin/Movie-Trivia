@@ -1,12 +1,12 @@
 "use strict";
 {
     angular.module('app')
-        .controller('TimerController', function(TriviaService){
+        .controller('TimerController', ['TriviaService', function(TriviaService){
 
           const $ctrl = this;
          
           $ctrl.trivia = TriviaService;
 
          
-});
+}]);
 }
