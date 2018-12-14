@@ -29,14 +29,14 @@
                 console.log($ctrl.correctAnswer, $ctrl.userAnswer)
                 if ($ctrl.correctAnswer === $ctrl.userAnswer) {
                     TriviaService.score += 5
-                    $ctrl.correct.push($ctrl.right);
+                    $ctrl.correct[0] = $ctrl.right;
                     console.log('correct!');
                     console.log(TriviaService.score);
                     TriviaService.getMoviesEasy().then(changes);
                 }
                 else {
                     TriviaService.getMoviesEasy().then(changes);
-                    $ctrl.correct.push($ctrl.wrong);
+                    $ctrl.correct[0] = $ctrl.wrong;
                 }
             }
 
